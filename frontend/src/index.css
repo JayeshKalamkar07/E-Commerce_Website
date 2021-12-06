@@ -332,9 +332,17 @@ img.large {
 
 /* Form */
 
+.signin_page {}
+
 .form {
-    max-width: 60rem;
+    max-width: 55rem;
     margin: 0 auto;
+    padding: 5px;
+    border: 4px solid rgba(0, 0, 0, 0.808);
+    border-radius: 10px 8px;
+    float: inline-start;
+    box-shadow: 5px 4px 5px #00000057;
+    transition: ease-in;
 }
 
 .form>div {
@@ -436,6 +444,12 @@ img.large {
 @media(max-width:410px) {
     .search button {
         margin-top: 15px;
+    }
+}
+
+@media(max-width:960px) {
+    .grid-container {
+        grid-template-rows: auto 1fr 5rem;
     }
 }
 
