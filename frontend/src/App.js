@@ -31,6 +31,7 @@ import MapScreen from './screens/MapScreen';
 import DashboardScreen from './screens/DashboardScreen';
 import SupportScreen from './screens/SupportScreen';
 import ChatBox from './components/ChatBox';
+import AppLogo from './Logos/App.png';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -65,8 +66,8 @@ function App() {
               <i className="fa fa-bars"></i>
             </button>
             <Link className="brand" to="/">
-              SHOPER'S
-            </Link>
+             Automobile Solutions 
+            </Link><img src={AppLogo} className="App_Logo" alt="applogo" />
           </div>
           <div>
             <Route
@@ -148,7 +149,7 @@ function App() {
         <aside className={sidebarIsOpen ? 'open' : ''}>
           <ul className="categories">
             <li>
-              <strong>Categories</strong>
+              <strong> Search By Categories</strong>
               <button
                 onClick={() => setSidebarIsOpen(false)}
                 className="close-sidebar"
@@ -256,7 +257,7 @@ function App() {
         </main>
         <footer className="row center">
           {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
-          <div>All right reserved © SHOPER'S </div>{' '}
+          <div>All right reserved © AutoMobile Solutions </div>{' '}
         </footer>
       </div>
     </BrowserRouter>

@@ -24,7 +24,7 @@ body {
 
 header {
     grid-area: header;
-    background-color: #203040;
+    background-color: #ff0000;
 }
 
 main {
@@ -34,7 +34,7 @@ main {
 
 footer {
     grid-area: footer;
-    background-color: #203040;
+    background-color: #00ff00;
     color: #ffffff;
 }
 
