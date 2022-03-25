@@ -31,7 +31,7 @@ body {
 
 header {
     grid-area: header;
-    background-color: #ff0000;
+    background-color: #00c1fc;
 }
 
 main {
@@ -41,7 +41,7 @@ main {
 
 footer {
     grid-area: footer;
-    background-color: #ff0000;
+    background-color: #00c1fc;
     color: rgb(206, 206, 206);
     height: 30px;
     bottom: 0%;
@@ -64,9 +64,12 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.categories li a:hover {
     color: #1100ff;
 }
+
+.categories li a:hover {}
 
 ul {
     padding: 0;
@@ -76,6 +79,12 @@ ul {
 
 li {
     margin-top: 1rem;
+}
+
+.categories li a {
+    align-items: center;
+    font-size: large;
+    color: #444444;
 }
 
 input,
@@ -162,7 +171,7 @@ a.brand {
 }
 
 .col-2 {
-    flex: 2 1 50rem;
+    flex: 1 1 50rem;
 }
 
 .col-3 {
@@ -190,6 +199,9 @@ a.brand {
     }
     .header {
         height: 100px;
+    }
+    .row {
+        align-items: flex-end;
     }
 }
 
@@ -225,7 +237,7 @@ button.open-sidebar:hover {
 
 aside ul {
     padding: 0;
-    list-style: none;
+    list-style: disc;
 }
 
 aside li {
@@ -256,7 +268,14 @@ img.medium {
 }
 
 img.large {
-    width: 85%;
+    width: 90%;
+}
+
+.imgminview {
+    height: 70px;
+    width: 70px;
+    border: 1px solid #404040;
+    padding: auto;
 }
 
 
@@ -297,7 +316,15 @@ img.large {
 /* Alert */
 
 .loading {
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.fa-spin {
+    padding: .5rem;
+    font-size: xx-large;
 }
 
 .success {

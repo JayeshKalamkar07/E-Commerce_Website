@@ -40,7 +40,7 @@ export default function OrderScreen(props) {
       script.src = `https://www.paypal.com/sdk/js?client-id=${data}`;
       script.async = true;
       script.onload = () => {
-        setSdkReady(true);
+        setSdkReady();
       };
       document.body.appendChild(script);
     };

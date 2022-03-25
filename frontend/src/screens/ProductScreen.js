@@ -55,7 +55,7 @@ export default function ProductScreen(props) {
         <MessageBox variant="danger"> {error} </MessageBox>
       ) : (
         <div>
-          <Link to="/"> Back to Home </Link>
+          <Link to="/"> <b>Back to Home</b> </Link>
           <div className="row top">
             <div className="col-2">
               <img
@@ -73,9 +73,11 @@ export default function ProductScreen(props) {
                     rating={product.rating}
                     numReviews={product.numReviews}></Rating>
                 </li>
-                <li> Pirce: ₹{product.price} </li>
+                <li><b> Price:</b> ₹{product.price} </li>
+                <li><b>Images :</b></li>
+                <li><img src={product.image} className="imgminview"alt="product" /></li>
                 <li>
-                  Description:
+                 <b> Description:</b>
                   <p> {product.description} </p>
                 </li>
               </ul>

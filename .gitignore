@@ -115,3 +115,5 @@ frontend/node_modules/.cache/eslint-loader/fc7f0cdb9494164b13e1c6a2e98a3ff5b1ae6
 backend/server.js
 backend/server.js
 frontend/public/index.html
+.env
+.env

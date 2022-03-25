@@ -31,7 +31,7 @@ import MapScreen from './screens/MapScreen';
 import DashboardScreen from './screens/DashboardScreen';
 import SupportScreen from './screens/SupportScreen';
 import ChatBox from './components/ChatBox';
-import AppLogo from './Logos/App.png';
+// import AppLogo from './Logos/App.png';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -67,7 +67,8 @@ function App() {
             </button>
             <Link className="brand" to="/">
              Automobile Solutions 
-            </Link><img src={AppLogo} className="App_Logo" alt="applogo" />
+            </Link>
+            {/* <img src={AppLogo} className="App_Logo" alt="applogo" /> */}
           </div>
           <div>
             <Route

@@ -39,6 +39,7 @@ export default function SigninScreen(props) {
           <input
             type="email"
             id="email"
+            autocomplete="off"
             placeholder="Enter email"
             required
             onChange={(e) => setEmail(e.target.value)}
